@@ -25,7 +25,7 @@
 import Foundation
 import Chatto
 
-public struct BaseMessageDecorationAttributes {
+public class BaseMessageDecorationAttributes {
     public var canShowFailedIcon: Bool
     public let isShowingTail: Bool
     public let isShowingAvatar: Bool
