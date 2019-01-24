@@ -28,7 +28,8 @@ import Chatto
 public enum MessageStatus {
     case failed
     case sending
-    case success
+    case sent
+    case read
 }
 
 public protocol MessageModelProtocol: ChatItemProtocol {
