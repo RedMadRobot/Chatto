@@ -38,7 +38,7 @@ class BaseMessagePresenterTests: XCTestCase {
         let sizingCell = PhotoMessageCollectionViewCell.sizingCell()
         let photoStyle = PhotoMessageCollectionViewCellDefaultStyle()
         let baseStyle = BaseMessageCollectionViewCellDefaultStyle()
-        let messageModel = MessageModel(uid: "uid", senderId: "senderId", type: "photo-message", isIncoming: true, date: Date(), status: .success)
+        let messageModel = MessageModel(uid: "uid", senderId: "senderId", type: "photo-message", isIncoming: true, date: Date(), status: .sent)
         let photoMessageModel = PhotoMessageModel(messageModel: messageModel, imageSize: CGSize(width: 30, height: 30), image: UIImage())
         self.interactionHandler = PhotoMessageTestHandler()
         self.presenter = PhotoMessagePresenter(messageModel: photoMessageModel, viewModelBuilder: viewModelBuilder, interactionHandler: self.interactionHandler, sizingCell: sizingCell, baseCellStyle: baseStyle, photoCellStyle: photoStyle)

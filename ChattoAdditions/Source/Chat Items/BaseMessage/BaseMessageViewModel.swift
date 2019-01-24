@@ -33,7 +33,7 @@ public enum MessageViewModelStatus {
 public extension MessageStatus {
     public func viewModelStatus() -> MessageViewModelStatus {
         switch self {
-        case .success:
+        case .sent:
             return MessageViewModelStatus.success
         case .failed:
             return MessageViewModelStatus.failed
