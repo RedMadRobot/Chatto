@@ -35,6 +35,8 @@ public extension MessageStatus {
         switch self {
         case .sent:
             return MessageViewModelStatus.success
+        case .read:
+            return MessageViewModelStatus.success
         case .failed:
             return MessageViewModelStatus.failed
         case .sending:
